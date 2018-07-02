@@ -1,23 +1,23 @@
-// console.log("Task 1");
-// let n = 5;
-// for (let i = 1; i <= n; i++) {
-//   console.log(i);
-// }
+console.log("Task 1");
+let n = 5;
+for (let i = 1; i <= n; i++) {
+  console.log(i);
+}
 
-// console.log("Task 2");
-// let k = 5;
-// for (let i = k; i > 0; i--) {
-//   console.log(i);
-// }
+console.log("Task 2");
+let k = 5;
+for (let i = k; i > 0; i--) {
+  console.log(i);
+}
 
-// console.log("Task 3");
-// let j = 10;
-// let z = 3;
-// let res;
-// for (let i = 1; i <= j; i++) {
-//   res = z * i;
-//   console.log(z + '*' + i + '=' + res);
-// }
+console.log("Task 3");
+let j = 10;
+let z = 3;
+let res;
+for (let i = 1; i <= j; i++) {
+  res = z * i;
+  console.log(z + '*' + i + '=' + res);
+}
 
 console.log("Task 4");
 
