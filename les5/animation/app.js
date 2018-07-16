@@ -30,12 +30,14 @@ const t = setInterval(() => {
   if (time >= 30) {
     clearInterval(y);
     clearInterval(t);
+    alert("Game over");
+    location.reload();
   }
   
 }, 1000);
 
 ball.addEventListener('click', () => {
-  alert("You win")
+  alert("You catch me");
 })
 
 
