@@ -20,7 +20,7 @@ const y = setInterval(() => {
 }, 50);
 
 setInterval(() => {
-  topPx = -0;
+  topPx = 0;
 }, 2000);
 
 
@@ -33,6 +33,10 @@ const t = setInterval(() => {
   }
   
 }, 1000);
+
+ball.addEventListener('click', () => {
+  alert("You win")
+})
 
 
 
