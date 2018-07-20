@@ -2,7 +2,21 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  cursor: none;
+  position: relative;
+  /* cursor: none; */
+}
+
+.score {
+  margin: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: black;
+  line-height: 50px;
+  text-align: center;
+  font-size: 40px;
+  display: inline-block;
+  color: gold;
+  border-radius: 50%;
 }
 
 
@@ -10,5 +24,21 @@ body {
   position: absolute;
   bottom: 0;
   width: 200px;
-  height: auto; 
+  height: auto;
+  box-sizing: border-box;
+  border: 5px dotted red;
+  z-index: 1; 
+}
+
+.cow {
+  position: absolute;
+  background-image: url(cow.svg);
+  background-size: 180px 120px;
+  background-position: -3px 1px;
+  top: 0;
+  left: 50%;
+  width: 180px;
+  height: 120px;
+  box-sizing: border-box;
+  border: 5px dotted greenyellow; 
 }
