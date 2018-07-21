@@ -26,7 +26,7 @@ body {
   width: 200px;
   height: auto;
   box-sizing: border-box;
-  border: 5px dotted red;
+  /* border: 5px dotted red; */
   z-index: 1; 
 }
 
@@ -40,5 +40,5 @@ body {
   width: 180px;
   height: 120px;
   box-sizing: border-box;
-  border: 5px dotted greenyellow; 
+  /* border: 5px dotted greenyellow;  */
 }

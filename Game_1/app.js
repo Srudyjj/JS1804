@@ -51,7 +51,7 @@ function moverCow(elem) {
 
         
     if (topPx - elemHeight >= document.documentElement.clientHeight - cartHeight) {
-      accumulator += 1;
+      accumulator -= 10;
       score.innerHTML = accumulator; 
       destroyer(elem);
       clearInterval(stepInterval);
@@ -61,7 +61,7 @@ function moverCow(elem) {
       clearInterval(stepInterval);       
     }
       
-  }, 100);
+  }, 10);
 }
 
 
@@ -103,8 +103,12 @@ document.addEventListener("mousemove", function(e) {
   moverCart(e);  
 })
 
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
-setInterval(creator(), 10);
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+setInterval(() => {
+  creator();
+}, 500)
+
 
 
 
