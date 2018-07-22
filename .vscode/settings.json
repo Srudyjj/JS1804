@@ -3,9 +3,9 @@
     "editor.fontFamily": "Monoid",
     "terminal.integrated.fontFamily": "Monoid",
     "terminal.integrated.fontSize": 11,
-    "editor.fontSize": 14,
+    "editor.fontSize": 12,
     "workbench.iconTheme": "vscode-icons",
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 0,
     "editor.tabSize": 2,
     "editor.renderWhitespace": "boundary",
     "editor.wordWrap": "on",
@@ -17,8 +17,7 @@
     "vsicons.dontShowNewVersionMessage": true,
     "files.eol": "\n",
     "files.insertFinalNewline": true,
-    "workbench.colorTheme": "One Dark Pro",
-    "workbench.colorTheme": "XhiTheme Color",    
+    "workbench.colorTheme": "XhiTheme Color",
     "workbench.activityBar.visible": true,
-    "search.location": "sidebar"
+    "search.location": "sidebar",
 }

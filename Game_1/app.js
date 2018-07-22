@@ -1,12 +1,6 @@
 'use strict'
 
-// document.addEventListener("DOMContentLoaded", function(event) {
-//   console.log("DOM fully loaded and parsed");
-// });
-
 const body = document.querySelector("body");
-console.log(body);
-
 const cart = body.querySelector("#cart");
 const cartWidth = cart.offsetWidth;
 const cartHeight = cart.clientHeight;
@@ -48,23 +42,15 @@ function moverCow(elem) {
     topPx = topPx + 5;
     elem.style.top = topPx + "px";
     catcher(cart ,elem);
-
         
-    if (topPx - elemHeight >= document.documentElement.clientHeight - cartHeight) {
+    if (topPx - elemHeight >= document.documentElement.clientHeight) {
       accumulator -= 10;
       score.innerHTML = accumulator; 
       destroyer(elem);
-      clearInterval(stepInterval);
-            
-    } else if (topPx - elemHeight >= document.documentElement.clientHeight) {
-      destroyer(elem);
       clearInterval(stepInterval);       
     }
-      
   }, 10);
 }
-
-
 
 function destroyer(mu) {
   body.removeChild(mu);  
@@ -73,37 +59,19 @@ function destroyer(mu) {
 function catcher(cart, cow) {
   const cartСoordinates = cart.getBoundingClientRect();
   const cowСoordinates = cow.getBoundingClientRect();
-  // console.log(cartСoordinates.left);
-  // console.log(cartСoordinates.width);
-  // console.log(cowСoordinates.left);
-  // console.log(cowСoordinates.width);
   const leftLimit = cartСoordinates.left - cowСoordinates.width/2;
   const rightLimit = cartСoordinates.right + cowСoordinates.width/2;
-  // console.log("Left limit" + leftLimit);
-  // console.log("Right limit" + rightLimit);
-  
-  
-
-
+ 
   if ((cowСoordinates.left >= leftLimit && cowСoordinates.right <= rightLimit) &&  cowСoordinates.bottom >= cartСoordinates.top ) {
     console.log("In the area");
     accumulator += 1;
     score.innerHTML = accumulator;   
-  } else {
-    console.log("Out of area");
-    
   }
-  
-   
 }
-
-
 
 document.addEventListener("mousemove", function(e) {
   moverCart(e);  
 })
-
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 setInterval(() => {
   creator();
