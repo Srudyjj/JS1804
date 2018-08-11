@@ -1,0 +1,26 @@
+
+    <!-- Создайте страницу которая запрашивает имя пользователя, 
+      если пользователь вводит "Admin" либо "admin" он попадает на страницу, 
+      которая оповещает его о том что " Пользоваетль Admin(не статическая строка, 
+      а данные что ввел пользователь) вошел в систему" а рядом разместите кнопку 
+      "Выход" которая вернет пользователя к модальному окну ввода логина. Реализуйте код как для куки так и для localstorage. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script async src="app.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>Local Storage</title>
+</head>
+<body>
+  <form action="user.html" class="col-md-6 mx-auto mt-3">
+    <div class="form-group">
+      <label for="name">Имя</label>
+      <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Введите ваше имя">
+    </div>
+    <button type="submit" class="btn btn-primary">Вход</button>
+  </form>
+</body>
+</html>
